@@ -1,0 +1,42 @@
+@use '../../variables';
+
+.registerForm {
+  h1 {
+    font-size: 2.5rem;
+    color: variables.$gradient-black-color;
+    text-align: center;
+    margin: 6rem 0;
+  }
+  margin: 0 auto;
+  max-width: 448px;
+  form label {
+    display: flex;
+  }
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid variables.$information-color;
+  }
+
+  .submit {
+    color: variables.$white-text-color;
+    background-color: variables.$gradient-red-color;
+    opacity: 1;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: variables.$dark-color;
+    font-weight: bold;
+    &:hover {
+      color: variables.$message-color;
+    }
+  }
+}

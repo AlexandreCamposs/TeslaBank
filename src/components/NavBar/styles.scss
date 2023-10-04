@@ -1,0 +1,42 @@
+@use '../../mixin';
+@use '../../variables';
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border: 1px solid red;
+
+  span {
+    display: block;
+    color: variables.$error-color;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+      padding: 0 0.5rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: variables.$dark-color;
+    font-weight: 500;
+  }
+  .userAuthenticate {
+    a {
+      padding-left: 0.5rem;
+      padding: 0.5rem 0.8rem;
+      color: variables.$error-color;
+    }
+    .register {
+      background-color: variables.$error-color;
+      color: variables.$white-text-color;
+      padding: 0.5rem 0.8rem;
+      border-radius: 5px;
+    }
+  }
+}
