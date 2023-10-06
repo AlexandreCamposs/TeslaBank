@@ -1,16 +1,16 @@
-import React from 'react';
+import './styles.scss';
 
 const Footer = () => {
   return (
-    <div>
-      <div>
+    <div className="container-footer">
+      <div className=" footer">
         <p>
           Copyright &copy; <span>AlexandreCamposs</span>. Todos os direitos
           reservados
+        </p>{' '}
+        <p>
+          <span>Powered </span> by{' '}
         </p>
-      </div>
-      <div>
-        <p>Powered by </p>
       </div>
     </div>
   );

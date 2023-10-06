@@ -1,0 +1,14 @@
+.container-support {
+  margin: 0 auto;
+  .support {
+    text-align: center;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

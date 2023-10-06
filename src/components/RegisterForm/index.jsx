@@ -21,7 +21,7 @@ const RegisterForm = () => {
       name: userState.name,
       email: userState.email,
       password: userState.password,
-      confirmPassword: userState.confirmPassword,
+      confirmPassword: userState.confirmPassword,   
     };
     console.log(newUser);
   };

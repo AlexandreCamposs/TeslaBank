@@ -1,0 +1,17 @@
+@use '../../variables';
+
+.container-footer {
+  background-color: variables.$information-color;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+    max-width: 1024px;
+    height: 80px;
+    font-weight: bold;
+    span {
+      color: red;
+    }
+  }
+}

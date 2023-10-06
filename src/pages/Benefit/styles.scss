@@ -1,0 +1,137 @@
+@use '../../variables';
+
+.container-inovation {
+  .inovation {
+    display: flex;
+    color: variables.$gradient-red-color;
+    margin-top: 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
+  }
+  .container-benefit,
+  .container-benefit2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+    div {
+      width: 25%;
+      background-color: variables.$pink-bg-color;
+      padding: 1rem;
+      border-radius: 5px;
+      margin: 0 0.7rem;
+      a {
+        display: flex;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        color: variables.$gradient-red-color;
+      }
+    }
+  }
+  .empty {
+    visibility: hidden;
+  }
+}
+.container-depositions {
+  span {
+    display: flex;
+    color: variables.$gradient-red-color;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+  .text {
+    font-size: 2.5rem;
+  }
+  .depositions {
+    display: flex;
+    gap: 2rem;
+    .box {
+      max-width: 33%;
+      width: 100%;
+
+      h4 {
+        margin: 3rem 0;
+        border-left: 2px solid red;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+  span {
+    color: variables.$gradient-red-color;
+    font-weight: bold;
+    margin: 3rem 0;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  img {
+    max-width: 50%;
+    margin: 2rem 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid variables.$information-color;
+    border-radius: 5px;
+  }
+  .register {
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: variables.$information-color;
+    background-color: variables.$gradient-red-color;
+    margin-right: 1rem;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.container-experience {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  .experience {
+    max-width: 60%;
+    width: 100%;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      span {
+        color: variables.$gradient-red-color;
+      }
+    }
+    .box img:first-child {
+      margin-right: 0.5rem;
+    }
+    p,
+    .box img {
+      max-width: 400px;
+      margin-bottom: 2rem;
+    }
+
+    .box img {
+      width: 25%;
+    }
+  }
+  .logo-union {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: variables.$gradient-red-color;
+  }
+}
