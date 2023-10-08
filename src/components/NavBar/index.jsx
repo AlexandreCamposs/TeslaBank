@@ -13,7 +13,7 @@ const NavBar = () => {
           <NavLink to="/benefit">Beneficios </NavLink>
         </li>
         <li>
-          <NavLink to="/accountDigital">Conta digital</NavLink>
+          <NavLink to="/error">Conta digital</NavLink>
         </li>
         <li>
           <NavLink to="support">Suporte</NavLink>

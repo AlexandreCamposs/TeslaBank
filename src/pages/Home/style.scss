@@ -1,130 +1,133 @@
 @use '../../variables';
-
-.home {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: space-between;
-  .description {
-    max-width: 60%;
-    width: 100%;
-    h1 {
-      font-size: 3rem;
-    }
-    p {
-      max-width: 400px;
-      margin: 2rem 0;
-      font-weight: bold;
-    }
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      align-items: center;
-      max-width: 500px;
-      list-style: none;
-      li {
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  .home {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    .description {
+      max-width: 60%;
+      width: 100%;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        max-width: 400px;
+        margin: 2rem 0;
+        font-weight: bold;
+      }
+      ul {
         display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
         align-items: center;
-        width: calc(50% - 0.5rem);
-        padding: 0.4rem;
-        img {
-          margin-right: 0.5rem;
+        max-width: 500px;
+        list-style: none;
+        li {
+          display: flex;
+          align-items: center;
+          width: calc(50% - 0.5rem);
+          padding: 0.4rem;
+          img {
+            margin-right: 0.5rem;
+          }
         }
       }
     }
-  }
-  .image-card {
-    display: flex;
-    justify-content: end;
-    max-width: 400px;
-    max-height: 577px;
-    img {
-      width: 70%;
-    }
-  }
-  .open-Account {
-    display: flex;
-    gap: 1rem;
-    margin-top: 3rem;
-    a {
+    .image-card {
       display: flex;
-      align-items: center;
-      padding: 0.5rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      background-color: variables.$gradient-red-color;
-      color: variables.$white-text-color;
-      &:hover {
-        opacity: 0.8;
+      justify-content: end;
+      max-width: 400px;
+      max-height: 577px;
+      img {
+        width: 70%;
       }
     }
-    div img {
-      margin-right: 1.5rem;
-    }
-  }
-}
-.home-app {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  .smartphone {
-    width: 40%;
-    .smart {
-      width: 70%;
-    }
-    .check {
-      width: 3rem;
-      position: relative;
-      top: 10rem;
-      right: 2rem;
-      background-color: variables.$information-color;
-      border-radius: 10px;
-      padding: 0.5rem;
-    }
-    .heart {
-      width: 3rem;
-      position: relative;
-      right: 4.3rem;
-      top: 25rem;
-      background-color: variables.$information-color;
-      border-radius: 10px;
-      padding: 0.5rem;
-    }
-    .mouse {
-      width: 3rem;
-      position: relative;
-      left: 10rem;
-      top: 15rem;
-      background-color: variables.$information-color;
-      border-radius: 10px;
-      padding: 0.5rem;
-    }
-  }
-  .container-description {
-    width: 60%;
-    margin-top: 2rem;
-    max-width: 550px;
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      span {
-        color: variables.$gradient-red-color;
+    .open-Account {
+      display: flex;
+      gap: 1rem;
+      margin-top: 3rem;
+      a {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: variables.$gradient-red-color;
+        color: variables.$white-text-color;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      div img {
+        margin-right: 1.5rem;
       }
     }
-    span {
-      font-weight: bold;
-    }
   }
-  .box {
+  .home-app {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-    img {
-      margin-right: 1rem;
+    .smartphone {
+      width: 40%;
+      .smart {
+        width: 70%;
+      }
+      .check {
+        width: 3rem;
+        position: relative;
+        top: 10rem;
+        right: 2rem;
+        background-color: variables.$information-color;
+        border-radius: 10px;
+        padding: 0.5rem;
+      }
+      .heart {
+        width: 3rem;
+        position: relative;
+        right: 4.3rem;
+        top: 25rem;
+        background-color: variables.$information-color;
+        border-radius: 10px;
+        padding: 0.5rem;
+      }
+      .mouse {
+        width: 3rem;
+        position: relative;
+        left: 10rem;
+        top: 15rem;
+        background-color: variables.$information-color;
+        border-radius: 10px;
+        padding: 0.5rem;
+      }
     }
-    div h4 {
-      margin-bottom: 0.5rem;
+    .container-description {
+      width: 60%;
+      margin-top: 2rem;
+      max-width: 550px;
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        span {
+          color: variables.$gradient-red-color;
+        }
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      img {
+        margin-right: 1rem;
+      }
+      div h4 {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }

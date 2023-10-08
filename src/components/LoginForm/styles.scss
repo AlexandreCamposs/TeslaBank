@@ -24,6 +24,8 @@
     color: variables.$white-text-color;
     background-color: variables.$gradient-red-color;
     opacity: 1;
+    cursor: pointer;
+    border: none;
     &:hover {
       opacity: 0.8;
     }
@@ -35,7 +37,7 @@
     color: variables.$dark-color;
     font-weight: bold;
     &:hover {
-      color: variables.$message-color;
+      color: variables.$dark2-color;
     }
   }
 }

@@ -1,0 +1,266 @@
+{
+  "registros": [
+    {
+      "name": " ",
+      "email": " ",
+      "password": " ",
+      "confirmPassword": " ",
+      "id": 0
+    },
+    {
+      "name": "dsdsdbv",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 1
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 2
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 3
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "ds",
+      "confirmPassword": "",
+      "id": 4
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "ds",
+      "confirmPassword": "dd",
+      "id": 5
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "ds",
+      "confirmPassword": "",
+      "id": 6
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "ds",
+      "confirmPassword": "",
+      "id": 7
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "ds",
+      "confirmPassword": "",
+      "id": 8
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "d",
+      "confirmPassword": "",
+      "id": 9
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "d",
+      "confirmPassword": "d",
+      "id": 10
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "d",
+      "confirmPassword": "d",
+      "id": 11
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "",
+      "confirmPassword": "d",
+      "id": 12
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "",
+      "confirmPassword": "d",
+      "id": 13
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "s",
+      "confirmPassword": "",
+      "id": 14
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "s",
+      "confirmPassword": "dd",
+      "id": 15
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "ss",
+      "confirmPassword": "dd",
+      "id": 16
+    },
+    {
+      "name": "dsa",
+      "email": "",
+      "password": "ds",
+      "confirmPassword": "ds",
+      "id": 17
+    },
+    {
+      "name": "dsa",
+      "email": "ale@teste.com",
+      "password": "ds",
+      "confirmPassword": "ds",
+      "id": 18
+    },
+    {
+      "name": "",
+      "email": "ale@teste.com",
+      "password": "ds",
+      "confirmPassword": "ds",
+      "id": 19
+    },
+    {
+      "name": "d",
+      "email": "d",
+      "password": "ds",
+      "confirmPassword": "ds",
+      "id": 20
+    },
+    {
+      "name": "d",
+      "email": "d",
+      "password": "ds",
+      "confirmPassword": "ds",
+      "id": 21
+    },
+    {
+      "name": "d",
+      "email": "d",
+      "password": "ds",
+      "confirmPassword": " ",
+      "id": 22
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 23
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 24
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 25
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 26
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 27
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 28
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 29
+    },
+    {
+      "name": "dsa",
+      "email": "dsa@testenc.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 30
+    },
+    {
+      "name": "dsa",
+      "email": "dsa@testenc.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 31
+    },
+    {
+      "name": "dsa",
+      "email": "dsa@testenc.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 32
+    },
+    {
+      "name": "dsa",
+      "email": "dsa@testenc.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 33
+    },
+    {
+      "name": "",
+      "email": "dsa@testenc.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 34
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "id": 35
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Hambúrgueres"
+    },
+    {
+      "id": 2,
+      "nome": "Refrigerantes"
+    }
+  ]
+}

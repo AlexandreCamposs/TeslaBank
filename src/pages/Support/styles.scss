@@ -1,14 +1,39 @@
+@use '../../variables';
+
 .container-support {
+  width: 50%;
   margin: 0 auto;
+
   .support {
     text-align: center;
+    border-bottom: 1px solid variables.$information-color;
+    margin-bottom: 2rem;
+    span {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0 1rem 0;
+      color: variables.$gradient-red-color;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      margin: 0.5rem 0 1.5rem 0;
+    }
   }
   .box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 80%;
-    width: 100%;
-    margin: 0 auto;
+    border-bottom: 1px solid variables.$information-color;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1rem 0;
+      img {
+        margin-right: 1rem;
+      }
+    }
+    p {
+      margin: 0 0 1rem 3rem;
+    }
   }
 }

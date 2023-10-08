@@ -1,11 +1,13 @@
 import { useState } from 'react';
 
-import Vect from '../assets/img/support/Vector (2).png';
+import iconClose from '../assets/img/support//iconClose.png';
+import iconOpen from '../assets/img/support//iconOpen.png';
 import Smartphone from '../assets/img/support/smartphone.png';
 
 const useImageSupport = () => {
   const [imageSupport, setImageSupport] = useState({
-    vect: Vect,
+    iconClose: iconClose,
+    iconOpen: iconOpen,
     smartphone: Smartphone,
   });
   return imageSupport;

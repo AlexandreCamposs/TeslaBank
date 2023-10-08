@@ -9,6 +9,12 @@
   }
   margin: 0 auto;
   max-width: 448px;
+  form div {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0.5rem;
+    color: variables.$gradient-red-color;
+  }
   form label {
     display: flex;
   }
@@ -25,6 +31,8 @@
     color: variables.$white-text-color;
     background-color: variables.$gradient-red-color;
     opacity: 1;
+    cursor: pointer;
+    border: none;
     &:hover {
       opacity: 0.8;
     }
@@ -35,8 +43,9 @@
     text-decoration: none;
     color: variables.$dark-color;
     font-weight: bold;
+
     &:hover {
-      color: variables.$message-color;
+      color: variables.$dark2-color;
     }
   }
 }
