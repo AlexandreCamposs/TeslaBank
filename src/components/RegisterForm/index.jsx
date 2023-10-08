@@ -25,14 +25,19 @@ const RegisterForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const validationErrors = validate();
+
+    // Se houver erros de validação, interrompa a execução da função
+    if (Object.keys(validationErrors).length > 0) {
+      return;
+    }
+
     const newUser = {
       name: userState.name,
       email: userState.email,
       password: userState.password,
       confirmPassword: userState.confirmPassword,
     };
-
-    validate();
 
     console.log(newUser);
     regirterUser(newUser);
@@ -49,6 +54,10 @@ const RegisterForm = () => {
       });
 
       const result = await response.json();
+      if (response.status === 201) {
+        setMessage('Usuário criado com sucesso.');
+        resetMessage();
+      }
       console.log(result);
       console.log('Success:', result);
     } catch (error) {
@@ -58,12 +67,7 @@ const RegisterForm = () => {
   };
 
   const validate = () => {
-    const newErrors = {
-      name: errors.name,
-      email: errors.email,
-      password: errors.password,
-      confirmPassword: errors.confirmPassword,
-    };
+    const newErrors = {};
     if (userState.name.trim() === '') {
       newErrors.name = 'Campo nome obrigatório.';
     }
@@ -72,6 +76,9 @@ const RegisterForm = () => {
     }
     if (userState.password.trim() === '') {
       newErrors.password = 'Campo senha obrigatório.';
+    }
+    if (userState.password.trim().length < 6) {
+      newErrors.password = 'Senha deve conter 6 digitos no mínimo.';
     }
     if (userState.confirmPassword.trim() === '') {
       newErrors.confirmPassword = 'Campo confirme a senha obrigatório.';
@@ -86,8 +93,14 @@ const RegisterForm = () => {
     }
 
     setErrors(newErrors);
+    console.log(newErrors);
+    return newErrors;
   };
-  console.log(errors);
+  const resetMessage = () => {
+    setTimeout(() => {
+      setMessage('');
+    }, 2000);
+  };
 
   return (
     <div className="registerForm">
@@ -151,7 +164,11 @@ const RegisterForm = () => {
         </label>
         <input type="submit" className="submit" />
       </form>
-      {message && <div>{message}</div>}
+      {message && (
+        <div className="messageSuccess">
+          <p>{message}</p>
+        </div>
+      )}
       <NavLink to="/login">Já tenho uma conta</NavLink>
     </div>
   );

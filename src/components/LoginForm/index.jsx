@@ -41,7 +41,10 @@ const LoginForm = () => {
             value={userState.password}
           />
         </label>
-        <input type="submit" name="confirmPassword" className="submit" />
+        {/* <button className="submit">Logar</button> */}
+        <NavLink to="/error" className="submit">
+          Logar
+        </NavLink>
       </form>
       <NavLink to="/register">Criar uma conta</NavLink>
     </div>

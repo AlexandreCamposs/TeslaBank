@@ -1,33 +1,74 @@
-@use '../../mixin';
+@use '../../mixins';
 @use '../../variables';
 
 .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1rem 0;
   max-width: 1024px;
   margin: 0 auto;
+  @include mixins.mobile {
+    justify-content: initial;
+    padding: 0 0 1rem 0;
+  }
 
   span {
     display: block;
     color: variables.$error-color;
     font-size: 2rem;
     font-weight: bold;
-  }
-  ul {
-    display: flex;
-    li {
-      list-style: none;
-      padding: 0 0.5rem;
+    @include mixins.mobile {
+      max-width: 50%;
+      width: 50%;
     }
   }
+  .navigate {
+    display: flex;
+    @include mixins.mobile {
+      flex-direction: column;
+    }
+    .menu-open {
+      display: block;
+    }
+    .enter-open {
+      display: flex !important;
+      flex-direction: column;
+      padding: 0 0 0 1rem;
+      a {
+        margin-bottom: 0.5rem;
+      }
+    }
+    ul {
+      display: flex;
+      margin-right: 2rem;
+      @include mixins.mobile {
+        display: none;
+      }
+      li {
+        list-style: none;
+        padding: 0 0.5rem;
+        @include mixins.mobile {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
   a {
     text-decoration: none;
     color: variables.$dark-color;
     font-weight: 500;
+    @include mixins.mobile {
+      flex-wrap: wrap;
+      padding: 1rem 1rem;
+    }
   }
   .userAuthenticate {
+    @include mixins.mobile {
+      display: none;
+    }
     a {
       padding-left: 0.5rem;
       padding: 0.5rem 0.8rem;
@@ -41,6 +82,15 @@
       &:hover {
         opacity: 0.8;
       }
+    }
+  }
+  .menu-mobile {
+    display: none;
+    @include mixins.mobile {
+      max-width: 40%;
+      width: 100%;
+      display: flex;
+      justify-content: end;
     }
   }
 }

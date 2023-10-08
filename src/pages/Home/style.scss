@@ -1,14 +1,22 @@
 @use '../../variables';
+@use '../../mixins';
 .container {
   max-width: 1024px;
   margin: 0 auto;
+
   .home {
     margin-top: 4rem;
     display: flex;
     justify-content: space-between;
+    @include mixins.mobile {
+      flex-direction: column;
+      margin-top: 0.5rem;
+      padding: 0 1rem;
+    }
     .description {
       max-width: 60%;
       width: 100%;
+
       h1 {
         font-size: 3rem;
       }
@@ -34,20 +42,19 @@
           }
         }
       }
-    }
-    .image-card {
-      display: flex;
-      justify-content: end;
-      max-width: 400px;
-      max-height: 577px;
-      img {
-        width: 70%;
+      @include mixins.mobile {
+        max-width: initial;
+        h1 {
+          font-size: 1.5rem !important;
+        }
       }
     }
+
     .open-Account {
       display: flex;
       gap: 1rem;
       margin-top: 3rem;
+
       a {
         display: flex;
         align-items: center;
@@ -62,6 +69,22 @@
       }
       div img {
         margin-right: 1.5rem;
+      }
+      @include mixins.mobile {
+        justify-content: center;
+        margin: 1rem 0;
+      }
+    }
+    .image-card {
+      display: flex;
+      justify-content: end;
+      max-width: 400px;
+      max-height: 577px;
+      img {
+        width: 70%;
+      }
+      @include mixins.mobile {
+        display: none;
       }
     }
   }
@@ -102,6 +125,9 @@
         border-radius: 10px;
         padding: 0.5rem;
       }
+      @include mixins.mobile {
+        display: none;
+      }
     }
     .container-description {
       width: 60%;
@@ -117,16 +143,21 @@
       span {
         font-weight: bold;
       }
-    }
-    .box {
-      display: flex;
-      align-items: center;
-      margin-top: 2rem;
-      img {
-        margin-right: 1rem;
+      .box {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        img {
+          margin-right: 1rem;
+        }
+        div h4 {
+          margin-bottom: 0.5rem;
+        }
       }
-      div h4 {
-        margin-bottom: 0.5rem;
+      @include mixins.mobile {
+        padding: 0 1rem;
+        width: initial;
+        margin-top: initial;
       }
     }
   }

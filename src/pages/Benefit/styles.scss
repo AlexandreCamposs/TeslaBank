@@ -1,10 +1,11 @@
 @use '../../variables';
+@use '../../mixins';
 
 .container-depositions,
 .container-cards,
 .container-experience {
   max-width: 1024px;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .container-inovation {
@@ -50,6 +51,22 @@
       visibility: hidden;
     }
   }
+  @include mixins.mobile {
+    padding: 1rem 0.5rem;
+    h1 {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .container-benefit {
+      .box {
+        width: auto !important;
+      }
+      div:nth-child(4),
+      div:nth-child(5) {
+        display: none;
+      }
+    }
+  }
 }
 .container-depositions {
   span {
@@ -74,6 +91,24 @@
         margin: 3rem 0;
         border-left: 2px solid red;
         padding-left: 1rem;
+      }
+    }
+  }
+  @include mixins.mobile {
+    padding: 0 1rem;
+    h2 {
+      font-family: 1.5rem;
+    }
+    .text {
+      font-size: 1.7rem;
+    }
+
+    .depositions {
+      gap: initial;
+      padding: 0 1rem;
+      flex-direction: column;
+      .box {
+        max-width: initial;
       }
     }
   }
@@ -117,6 +152,13 @@
       opacity: 0.7;
     }
   }
+  @include mixins.mobile {
+    max-width: initial;
+    padding: 0 1rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
 }
 .container-experience {
   display: flex;
@@ -151,5 +193,23 @@
     border-radius: 10px;
     padding: 2rem;
     background-color: variables.$gradient-red-color;
+  }
+  @include mixins.mobile {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+    .experience {
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      max-width: initial;
+    }
+    .logo-union {
+      display: none;
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

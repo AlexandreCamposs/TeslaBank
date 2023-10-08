@@ -8,9 +8,6 @@ const Footer = () => {
           Copyright &copy; <span>AlexandreCamposs</span>. Todos os direitos
           reservados
         </p>{' '}
-        <p>
-          <span>Powered </span> by{' '}
-        </p>
       </div>
     </div>
   );
