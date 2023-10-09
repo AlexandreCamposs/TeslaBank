@@ -8,60 +8,11 @@
       "id": 0
     },
     {
-      "name": "sa",
-      "email": "das@teste.com",
-      "password": "1",
-      "confirmPassword": "1",
+      "name": "dsadssa",
+      "email": "teste@teste.com",
+      "password": "123123",
+      "confirmPassword": "123123",
       "id": 1
-    },
-    {
-      "name": "sa",
-      "email": "das@teste.com",
-      "password": "a",
-      "confirmPassword": "a",
-      "id": 2
-    },
-    {
-      "name": "sa",
-      "email": "das@teste.com",
-      "password": "a",
-      "confirmPassword": "a",
-      "id": 3
-    },
-    {
-      "name": "sa",
-      "email": "das@teste.com",
-      "password": "a",
-      "confirmPassword": "a",
-      "id": 4
-    },
-    {
-      "name": "ale",
-      "email": "ale@tesnte.com",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "id": 5
-    },
-    {
-      "name": "ale",
-      "email": "ale@tesnte.com",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "id": 6
-    },
-    {
-      "name": "ale",
-      "email": "ale@tesnte.com",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "id": 7
-    },
-    {
-      "name": "ale",
-      "email": "ale@tesnte.com",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "id": 8
     }
   ]
 }

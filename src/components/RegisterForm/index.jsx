@@ -104,6 +104,8 @@ const RegisterForm = () => {
 
     setErrors(newErrors);
     console.log(newErrors);
+
+    return newErrors;
   };
   const resetMessage = () => {
     setTimeout(() => {
