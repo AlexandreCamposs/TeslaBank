@@ -57,10 +57,20 @@ const RegisterForm = () => {
       if (response.status === 201) {
         setMessage('Usuário criado com sucesso.');
         resetMessage();
+      } else {
+        setMessage('Erro ao cadastrar usuário.');
+        resetMessage();
       }
       console.log(result);
       console.log('Success:', result);
     } catch (error) {
+      if (error.message === 'Failed to fetch') {
+        setMessage('Erro ao cadastrar usuário. Tente mais tarde.');
+        resetMessage();
+      } else {
+        setMessage('Erro ao cadastrar usuário.');
+        resetMessage();
+      }
       console.log(error);
       console.error('Error:', error);
     }
@@ -94,7 +104,6 @@ const RegisterForm = () => {
 
     setErrors(newErrors);
     console.log(newErrors);
-    return newErrors;
   };
   const resetMessage = () => {
     setTimeout(() => {
